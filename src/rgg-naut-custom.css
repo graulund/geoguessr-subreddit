@@ -1,0 +1,71 @@
+body .btn, body button, .c-btn-primary, .wiki-page .wiki-page-content .wiki_button,
+#mail.havemail:before,
+#header .pagename a,
+#header .tabmenu li a,
+.link .title,
+.entry .tagline,
+.entry .buttons li a,
+.link .entry .buttons li .redditSingleClick,
+.linkflairlabel,
+.side .titlebox h1.redditname,
+.comment .entry .tagline,
+.search-header-label {
+	font-family: Verdana, Arial, sans-serif;
+}
+
+.side:before {
+	background-size: 320px 208px;
+}
+
+#header {
+	height: 156px; /* #1: 40 px less than normal */
+	background-position: center bottom;
+}
+
+#header-bottom-left {
+	top: 60px; /* #1 */
+}
+
+#header .pagename a {
+	font-size: 28px;
+}
+
+.side {
+	margin-top: 322px; /* #1 in reverse */
+}
+
+.footer-parent {
+	height: auto;
+	margin-top: 30px;
+	padding-top: 30px;
+	background-position: right bottom;
+}
+
+.footer {
+	background-color: rgba(0,0,0,.75);
+}
+
+.bottommenu, .bottommenu a {
+	color: #fff !important;
+}
+
+/*=== SPOILER TAG CODE ===*/
+
+a[href="#s"] {
+	display: inline-block;
+	background: lightgrey !important;
+	color: black !important;
+	cursor: text;
+}
+a[href="#s"]::after {
+	content: attr(title);
+	background: black !important;
+	color: black !important;
+	visibility: visible;
+	border-radius: 3px;
+	padding: 0 3px;
+	margin-left: 5px;
+}
+a[href="#s"]:hover::after, a[href="#s"]:active::after {
+	color: white !important;
+}
