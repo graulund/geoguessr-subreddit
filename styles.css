@@ -29,7 +29,15 @@ body .btn, body button, .c-btn-primary, .wiki-page .wiki-page-content .wiki_butt
 .linkflairlabel,
 .side .titlebox h1.redditname,
 .comment .entry .tagline,
-.search-header-label {
+.search-header-label,
+.side .md .-blocks,
+.side .md .-lists,
+.side .md pre,
+.side .md blockquote,
+.side .md table,
+.side .md p,
+.side .md ul,
+.side .md ol {
 	font-family: Verdana, Arial, sans-serif;
 }
 
